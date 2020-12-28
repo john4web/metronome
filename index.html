@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="de">
+   <head>
+      <title>Metronom</title>
+      <meta charset="utf-8">
+      <meta name="author" content="Johannes Gerstbauer">
+      <meta name="keywords" content="Metronom, Clicktrack">
+      <meta name="Content-Language" content="de-at">
+      <meta name="Language" content="de-at">
+      <meta name="description" content="Metronom">
+      <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+      <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+      <link rel="manifest" href="site.webmanifest">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#276980">
+      <link rel="stylesheet" href="src/css/style.css?v=1.0" media="all">
+      <link rel="stylesheet" href="src/css/responsive.css?v=1.0" media="all">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+      <script src="src/js/globalObject.js" defer></script>
+      <script src="src/js/dynamicGUI.js" defer></script>
+      <script src="src/js/boxAnimation.js" defer></script>
+      <script src="src/js/movingButtons.js" defer></script>
+      <script src="src/js/logic.js" defer></script>
+   </head>
+   <body onresize="setLineLength()" onload="writeSliderValue(); activateButton(4); setLineLength();">
+      <main>
+         <div>
+            <div id="metronomeContainer">
+               <header>
+                  <h1>Metronom</h1>
+               </header>
+               <div id="beatpointcontainer">
+                  <div class="beatpoint"></div>
+                  <div class="beatpoint"></div>
+                  <div class="beatpoint"></div>
+                  <div class="beatpoint"></div>
+               </div>
+               <div id="line">
+                  <div id="ball"></div>
+               </div>
+               <div id="buttoncontainerfull">
+                  <div class="buttoncontainer"><button type="button" class="button" onmousedown="handleCalc(1)" onkeydown="handleCalc(1)">-1</button><button type="button" class="button" onmousedown="handleCalc(2)" onkeydown="handleCalc(2)">-5</button></div>
+                  <div id="buttoncontainermiddle">
+                     <div id="numbercontainer">
+                        <div id="numbertable">
+                           <div id="numberfield"></div>
+                        </div>
+                     </div>
+                     <div id="bpmfield">BPM</div>
+                  </div>
+                  <div class="buttoncontainer" id="buttoncontainerright"><button type="button" class="button" onmousedown="handleCalc(3)" onkeydown="handleCalc(3)">+1</button><button type="button" class="button" onmousedown="handleCalc(4)" onkeydown="handleCalc(4)">+5</button></div>
+               </div>
+               <div id="controlcontainer">
+                  <div id="speedname">allegro</div>
+                  <input title="BPM auswählen" type="range" min="1" max="300" value="150" class="slider" id="myrange" oninput="writeSliderValue()">
+               </div>
+               <div id="movecontainer">
+                  <div id="settingscontainer"><button type="button" class="settings" onmousedown="settingButton1()" onkeydown="settingButton1()">Schläge pro Takt<span>4</span></button><button type="button" class="settings" onmousedown="settingButton2()" onkeydown="settingButton2()">Klicks pro Schlag<span>1</span></button><button type="button" class="settings" id="drum" onmousedown="settingButton3()" onkeydown="settingButton3()">Tempo tippen<span><i class="fas fa-drum"></i></span></button></div>
+                  <div id="percentcontainer">
+                     <div id="percentholder"><button type="button" class="percents" onmousedown="percentClick(50)" onkeydown="percentClick(50)">50%</button><button type="button" class="percents" onmousedown="percentClick(75)" onkeydown="percentClick(75)">75%</button><button type="button" class="percents" onmousedown="percentClick(85)" onkeydown="percentClick(85)">85%</button><button type="button" class="percents" onmousedown="percentClick(95)" onkeydown="percentClick(95)">95%</button><button type="button" class="percents" onmousedown="percentClick(100)" onkeydown="percentClick(100)">100%</button></div>
+                  </div>
+               </div>
+               <div id="startcontainer"><button type="button" id="startbutton" onmousedown="play()" onkeydown="play()"><i id="playimage" class="fas fa-play"></i></button></div>
+            </div>
+         </div>
+      </main>
+   </body>
+</html>

@@ -1,0 +1,206 @@
+@media only screen and (max-width:350px) {
+	#metronomeContainer {
+		width: 280px;
+		height: 535px
+	}
+	#line,
+	.slider {
+		width: 180px
+	}
+	#speedname {
+		padding-left: 0;
+		font-size: 70%
+	}
+	.settings {
+		width: 93px;
+		height: 58px;
+		font-size: 70%
+	}
+	.percents {
+		width: 9%;
+		font-size: 70%
+	}
+	i {
+		font-size: 178%
+	}
+	#drum {
+		padding-top: 5px
+	}
+	#startbutton {
+		width: 45px;
+		height: 45px
+	}
+	#playimage {
+		font-size: 15px
+	}
+}
+
+@media only screen and (min-width:350px) and (max-width:415px) {
+	#metronomeContainer {
+		width: 320px;
+		height: 563px
+	}
+	#line,
+	.slider {
+		width: 220px
+	}
+	#speedname {
+		padding-left: 0;
+		font-size: 80%
+	}
+	.settings {
+		width: 107px;
+		height: 58px;
+		font-size: 70%
+	}
+	.percents {
+		width: 11%;
+		font-size: 80%
+	}
+	i {
+		font-size: 178%
+	}
+	#drum {
+		padding-top: 5px
+	}
+}
+
+@media only screen and (min-width:415px) and (max-width:480px) {
+	#metronomeContainer {
+		width: 360px;
+		height: 563px
+	}
+	#line,
+	.slider {
+		width: 260px
+	}
+	#speedname {
+		padding-left: 179px;
+		font-size: 80%
+	}
+	.settings {
+		width: 120px;
+		height: 70px;
+		font-size: 80%
+	}
+	.percents {
+		width: 13%;
+		font-size: 80%
+	}
+	i {
+		font-size: 178%
+	}
+	#drum {
+		padding-top: 6px
+	}
+}
+
+@media only screen and (min-width:480px) and (max-width:600px) {
+	#metronomeContainer {
+		width: 400px;
+		height: 563px
+	}
+	#line,
+	.slider {
+		width: 300px
+	}
+	#speedname {
+		padding-left: 219px;
+		font-size: 90%
+	}
+	.settings {
+		width: 133px;
+		font-size: 90%
+	}
+	.percents {
+		width: 15%;
+		font-size: 90%
+	}
+	i {
+		font-size: 178%
+	}
+	#drum {
+		padding-top: 9px
+	}
+}
+
+@media only screen and (min-height:512px) and (max-height:600px) {
+	.beatpoint {
+		width: 25px;
+		height: 25px
+	}
+	#ball {
+		width: 25px;
+		height: 25px;
+		top: -10.5px
+	}
+	#line {
+		top: 120px
+	}
+	header>h1 {
+		font-size: 150%;
+		line-height: 161%
+	}
+	#buttoncontainerfull {
+		top: 160px
+	}
+	#controlcontainer {
+		top: 166px
+	}
+	#movecontainer {
+		top: 192px
+	}
+	#startcontainer {
+		top: 203px
+	}
+	#metronomeContainer {
+		height: 495px
+	}
+}
+
+@media only screen and (max-height:512px) {
+	#beatpointcontainer {
+		top: 60px
+	}
+	.beatpoint {
+		width: 20px;
+		height: 20px
+	}
+	#ball {
+		width: 20px;
+		height: 20px;
+		top: -8px
+	}
+	#line {
+		top: 95px
+	}
+	header>h1 {
+		font-size: 150%;
+		line-height: 161%
+	}
+	#buttoncontainerfull {
+		top: 135px
+	}
+	#controlcontainer {
+		top: 139px
+	}
+	#movecontainer {
+		top: 160px
+	}
+	#startcontainer {
+		top: 170px
+	}
+	#metronomeContainer {
+		height: 460px
+	}
+}
+
+@media only screen and (min-width:350px) and (max-height:600px) {
+	#startbutton {
+		width: 45px;
+		height: 45px
+	}
+	#playimage {
+		font-size: 15px
+	}
+}
